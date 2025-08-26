@@ -1,0 +1,203 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755112720465
+  modified: 1755112720465
+  description: ""
+collection:
+  - name: Users
+    meta:
+      id: fld_7c4512931f2145c5b09bfddf9bf2d10e
+      created: 1755717448831
+      modified: 1755717448831
+      sortKey: -1755717448831
+      description: ""
+    children:
+      - url: http://34.9.16.51/api/users
+        name: Create
+        meta:
+          id: req_1a9889ef8ec746d29ee9d89eb863d576
+          created: 1755112800217
+          modified: 1756216609828
+          isPrivate: false
+          description: ""
+          sortKey: -1755717454846
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "email@gmail.com",
+            	"username": "username",
+            	"tax_number": "123456789"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.4.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Password Auth
+    meta:
+      id: fld_babc869596454addada6e8e3b4ce9500
+      created: 1755717479784
+      modified: 1755717479784
+      sortKey: -1755717479784
+      description: ""
+    children:
+      - url: http://34.9.16.51/api/auth/activate
+        name: Activate
+        meta:
+          id: req_8b32954479c848ef9ce205b806a82ed1
+          created: 1755717484460
+          modified: 1756216606429
+          isPrivate: false
+          description: ""
+          sortKey: -1755717484460
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"reset_password_token": "2f99f0b7-6a94-461d-bfed-6f3c6174a2cc",
+            	"reset_password_hash": "siAnorktzpgpvjwa",
+            	"new_password": "#SenhaForte123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.4.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://34.9.16.51/api/auth/reset
+        name: Reset
+        meta:
+          id: req_de0a07a304f24e1ab03581b4ddad31c3
+          created: 1755792796149
+          modified: 1756216592031
+          isPrivate: false
+          description: ""
+          sortKey: -1755792796149
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "email@gmail.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.4.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://34.9.16.51/api/auth/login
+        name: Login
+        meta:
+          id: req_ade4aae679af4097a13aa40a8ff161e0
+          created: 1755795202848
+          modified: 1756216557622
+          isPrivate: false
+          description: ""
+          sortKey: -1755755140304.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "email@gmail.com",
+            	"password": "#SenhaForte1234"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.4.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://34.9.16.51/api/auth/change
+        name: Change
+        meta:
+          id: req_01d41dc18d9c4930956e10a87593833d
+          created: 1755898373253
+          modified: 1756216599760
+          isPrivate: false
+          description: ""
+          sortKey: -1755898373253
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"new_password": "#SenhaForte1",
+            	"old_password": "#SenhaForte123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.4.0
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiIxMjM0NTYiLCJleHAiOjE3NTYxMzg5NjAsImlhdCI6MTc1NjEzNzE2MCwianRpIjoiNjY5ZmZmOWMtNTQ5My00OGJjLThiYjAtYzk4NGY5NGRlZjg5IiwibmJmIjoxNzU2MTM3MTYwLCJzY29wZXMiOltdLCJzdWIiOiJiY2M0MDRlZi05M2FjLTQ1OTQtYTE1ZC0yZGYzZTAxZTM1OTYifQ.kOeCh117kN3cNIzQmOaHn8TA14zs1IuQiX7Kwn6jtl42HVoT0vdoXmGwDbSyO0j80pG3wCA-VRi-jhR9tQ1GEpAaFgWiCfnw2gXLlzpVdhFT9_tS0EGLvQZS0FvmpHf91Wu0GbHw9h6F3X2rag7OwQX4ijg_U5Z9cgS5EZTq7U_q4rItFpERi6NZ4Gzpyx66-aWOsaJQpm8uELNiHjriM03Wzt6EYZvZXLGhDuh_DPpnHaZqTYC-dMeicblrmMM8rx2EBkFAFjePp7aDYegSQ-yO-B3RXQOL_95IDZcX1nfROInSUXa9ndQONdUMeOeebs4hVwJ9d3LGYr4tx6t3ZA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755112795452
+    modified: 1755130077586
+  cookies:
+    - key: session_token
+      value: yYixrHQniJUx6vhF_wT3lKBleXTR-mY9NoMLHhNQo2Y=
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-08-14T00:07:57.586Z
+      lastAccessed: 2025-08-14T00:07:57.586Z
+      sameSite: lax
+      id: f40f1dc5-1761-47a7-a8b3-c29fb3b2518c
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755112795339
+    modified: 1755112795339
+    isPrivate: false
