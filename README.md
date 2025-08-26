@@ -19,3 +19,9 @@ Meu desejo é te dar a perspectiva da construção de um software complexo. Esto
 <a href="./api-core/insomnia/endpoints.yaml" download="insomnia-endpoints.yaml">
   🏄 Teste minha API você mesmo!
 </a> Ela já está no ar!
+
+<br>
+
+👋 [Dê um Hello, World na minha API](http://34.9.16.51)
+
+Veja em http://34.9.16.51
